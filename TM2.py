@@ -6,7 +6,7 @@ from TMclassv2 import Reaction
 intents = discord.Intents.default()
 intents.members = True
 bot = commands.Bot(command_prefix='beta',intents=intents,status=discord.Status.dnd,activity=discord.Activity(name='down for maintenence',type=discord.ActivityType.watching))
-client = pymongo.MongoClient("mongodb+srv://starlord:Adeoluwa.05@playerinfo.t5g9l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient("connection string")
 dbv3 = client.Profile
 profiling = dbv3.User
 Reaction = Reaction()
