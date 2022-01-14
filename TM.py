@@ -9,7 +9,7 @@ from TMclassv2 import Reaction
 
 
 #chen email
-client = pymongo.MongoClient("mongodb+srv://starlord:Adeoluwa.05@playerinfo.t5g9l.mongodb.net/myFirstDatabase&retryWrites=true&w=majority?ssl=true&ssl_cert_reqs=CERT_NONE",connect=False)
+client = pymongo.MongoClient("connection string",connect=False)
 db = client.games
 RL = db.RocketLeague
 dbv2 = client.Match
@@ -23,7 +23,7 @@ MC = db.MC
 val = db.valorant
 fort = db.fortnite
 #main email
-client = pymongo.MongoClient('mongodb+srv://starlord:Adeoluwa.05@cluster0.52enc.mongodb.net/myFirstDatabase&retryWrites=true&w=majority?ssl=true&ssl_cert_reqs=CERT_NONE',connect=False)
+client = pymongo.MongoClient('connection string',connect=False)
 db = client.server
 connected = db.matches
 
@@ -1343,4 +1343,4 @@ async def on_raw_reaction_add(payload):
 
 
 update.start()
-bot.run('ODIyNjM3OTU0NzY5ODc5MTAw.YFVLTA.heIliLdUJYanfdNbf6iObYIxtLU')
+bot.run('token')
