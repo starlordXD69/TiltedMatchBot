@@ -4,7 +4,7 @@ from discord.ext import commands
 import asyncio
 from discord.ext.commands import Greedy
 #chenpickle
-client = pymongo.MongoClient("mongodb+srv://starlord:Adeoluwa.05@playerinfo.t5g9l.mongodb.net/myFirstDatabase&retryWrites=true&w=majority?ssl=true&ssl_cert_reqs=CERT_NONE",connect=False)
+client = pymongo.MongoClient("connection string",connect=False)
 db = client.games
 RL = db.RocketLeague
 dbv2 = client.Match
@@ -20,7 +20,7 @@ fort = db.fortnite
 dbv5 = client.server
 da_matches = dbv5.match
 
-client = pymongo.MongoClient('mongodb+srv://starlord:Adeoluwa.05@cluster0.52enc.mongodb.net/myFirstDatabase&retryWrites=true&w=majority?ssl=true&ssl_cert_reqs=CERT_NONE',connect=False)
+client = pymongo.MongoClient('connection string',connect=False)
 db = client.server
 connected = db.matches
 
