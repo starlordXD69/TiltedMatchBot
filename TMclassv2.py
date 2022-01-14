@@ -5,7 +5,7 @@ from TMClass import Profiles, UserProfiles
 Profiles = Profiles()
 supported = ['RL','rl','Roblox','roblox','MC','mc','Mc','Val','val','Fortnite','fortnite',"CSGO",'Csgo','csgo']
 #chenpickle
-client = pymongo.MongoClient("mongodb+srv://starlord:Adeoluwa.05@playerinfo.t5g9l.mongodb.net/myFirstDatabase&retryWrites=true&w=majority?ssl=true&ssl_cert_reqs=CERT_NONE",connect=False)
+client = pymongo.MongoClient("connection string",connect=False)
 db = client.games
 RL = db.RocketLeague
 dbv2 = client.Match
